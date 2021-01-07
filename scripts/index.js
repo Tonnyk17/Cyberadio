@@ -60,7 +60,7 @@ function listSongs(titulo,artista,imagen,cancion){
       let textInfoContain = document.createElement('p');
       let infoContainer = document.createElement('div');
       let iconContainer = document.createElement('img');
-      let iconCon = document.createElement('span');
+    
       containersButton = contenedores;
       //Atributos y asignacion de atributos
       let titleAttrib = document.createAttribute('class');
@@ -68,9 +68,10 @@ function listSongs(titulo,artista,imagen,cancion){
       let textAttrib = document.createAttribute('class');
       let infoCoAttrib = document.createAttribute('class');
       let iconAttrib = document.createAttribute('class');
+      let altAttrib = document.createAttribute("alt");
       let containerID = document.createAttribute('id');
       containerID.value = i;
-      
+      altAttrib.value = "portada de cancion";
       containerAttrib.value = 'Card-song';
       titleAttrib.value = 'Card-song-title';
       textAttrib.value = 'Card-song-text';
@@ -93,7 +94,7 @@ function listSongs(titulo,artista,imagen,cancion){
       textInfo.setAttributeNode(textAttrib);
       infoContainer.setAttributeNode(infoCoAttrib);
       iconContainer.setAttributeNode(iconAttrib);
-    
+      iconContainer.setAttributeNode(altAttrib);
      
       contenedores.appendChild(iconContainer);
       titles.appendChild(titlesContain);
@@ -105,13 +106,13 @@ function listSongs(titulo,artista,imagen,cancion){
       
    
       arrayContainer.push(contenedores);
-      let cancionAnterior = i;
+     
       console.log(arrayContainer);
       let mouse;
       contenedores.onmouseenter= () =>{
          mouse = i;
          arrayContainer[mouse].style.backgroundColor = 'rgba(10, 216, 240,0.5)';
-         console.log(mouse);
+       
          
         }
       contenedores.onmouseleave= () =>{
@@ -124,8 +125,7 @@ function listSongs(titulo,artista,imagen,cancion){
       };
       
      
-     cancionAnterior = i;
-     console.log(cancionAnterior);
+     
      
       
        
@@ -156,8 +156,7 @@ function changeImage(){
 
 function changeSong(){  
 
-    console.log(indice);
-
+  
       let newSongs = new Songs(titulos[indice],artista[indice],duracion[indice],songArray[indice],imagesArray[indice]);
       songTitle.innerText = newSongs.titleSong;
       artist.innerText = newSongs.artistSong;
