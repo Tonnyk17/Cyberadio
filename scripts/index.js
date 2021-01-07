@@ -35,7 +35,7 @@ function listSongs(titulo,artista,imagen,cancion){
   let containersButton;
 
     let songArray = ['Music/Never.mp3','Music/Black.mp3','Music/Ballad.mp3','Music/Chippin.mp3','Music/Like.mp3'];
-    let imagesArray = ['imagenes/never-fade-away.jpg','/imagenes/Black.jpeg','imagenes/Ballad.jpg','imagenes/Chippin.jpg','imagenes/Like.jpg'];
+    let imagesArray = ['https://i.postimg.cc/Y2nqbRys/never-fade-away.jpg','https://i.postimg.cc/hv5Dv4dB/Black.jpg','https://i.postimg.cc/Dzrw6Ktr/Ballad.jpg','https://i.postimg.cc/QxvNrtDg/chippin.jpg','https://i.postimg.cc/wHVt1cFJ/Like.jpg'];
     let titulos = ['Never Fade Away','Black Dog','The Ballad Of Buck Ravers',"Chippin' In",'A Like Supreme'];
     let artista = ['SAMURAI, Refused','SAMURAI','SAMURAI','SAMURAI','SAMURAI'];
     let duracion =['3:10','4:23','3:48'];
@@ -137,7 +137,7 @@ function listSongs(titulo,artista,imagen,cancion){
 function changeImage(){
   
     if(botonImage.src.match("Play")){
-      botonImage.src = 'imagenes/Pause.png';
+      botonImage.src = 'https://i.postimg.cc/ydnYqy6W/Pause.png';
       Tarjeta.style.cssText= 'border: 2px #0ad8f0 solid; box-shadow: 0px 0px 6px 1px #0ad8f0;';
       botonImage.style.cssText= ' border: 2px solid  #0ad8f0; background-color:#0ad8f0;'
       botonN.style.cssText= 'filter: invert(0.9) sepia(2) hue-rotate(100deg) saturate(1000%);'; 
@@ -145,7 +145,7 @@ function changeImage(){
       arrayContainer[indice].style.backgroundColor = 'rgba(10, 216, 240,0.5)';
     }
     else{
-      botonImage.src = 'imagenes/Play.png';
+      botonImage.src = 'https://i.postimg.cc/RhFCvJqd/Play.png';
       Tarjeta.style.cssText = 'box-shadow: 0px 0px 6px 1px rgb(255, 255, 0); border: 2px rgb(255, 255, 0) solid; ';
       botonImage.style.cssText= ' border: 2px solid  rgb(255, 255, 0); background-color:rgb(255, 255, 0);'
       botonN.style.cssText= 'invert(0.5) sepia(1) hue-rotate(20deg) saturate(5000%);';
