@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Cyber radio</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="Cards-container">
+            <div class="Card" id="Card">
+                <img src="./imagenes/never-fade-away.jpg" alt="" class="Card_image">
+                <div class="Card-info-container">
+                    <h2 class="Card_title">Never Fade Away</h2>
+                    <p class="Card_text" id='artist'>SAMURAI, Refused</p>
+                </div>
+                <div class="Card-container-buttons">
+                    <div class="Card-button-move"><img class="image1" src="./imagenes/back.png" alt=""></div>
+                    <div class="Card_button"><img id="play/pause" src="./imagenes/Play.png" alt="" onclick="changeImage()"></div>
+                    <div class="Card-button-move"><img class="image" src="./imagenes/Next.png" alt="" onclick="changeSong()"></div>
+                </div>
+            
+                <audio src="./Music/Never.mp3"  ></audio>
+              
+            </div>
+        </div>
+        <div class="song-menu">
+           
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

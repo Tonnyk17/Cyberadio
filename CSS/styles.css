@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background-image: url('../imagenes/cyberpunk-nightcity.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.Cards-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+.Card{
+    background-color: rgba(39, 39, 39, 0.9);
+    width: 450px;   
+    text-align: center;
+   
+    border: 2px rgb(255, 255, 0) solid;
+    box-shadow: 0px 0px 6px 1px rgb(255, 255, 0);
+}
+.Card_image{
+    margin-top: 10px;
+    width: 95%;
+}
+.Card-info-container{
+    margin: 10px 5px;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Card_text, .Card_title{
+    padding: 5px;
+}
+.Card-container-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.Card_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-style: none;
+    padding-top: 2px;
+     margin: 15px 5px;
+
+
+}
+.Card_button img{
+    width: 100%;
+    border-radius: 100%;
+    border: 2px solid  rgb(255, 255, 0);
+    background-color:rgb(255, 255, 0);
+    
+}
+.Card-button-move{
+    width: 40px;
+    height: 40px;
+    margin: 15px 5px;
+}
+.image,.image1{
+    width: 100%;
+    filter: invert(0.5) sepia(1) hue-rotate(20deg) saturate(5000%);
+
+}
+.song-menu{
+    height: auto;
+    max-height: 500px;
+    width: 70%;
+    margin: 0 auto;
+}
+.Card-song{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,0.8);
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    align-items: center;
+    color: white ;
+
+}
+.Card-song-container{
+    padding-left: 10px;
+}
+.Card-song-title{
+    font-size: 16px;
+}
+.Card-song-text{
+    font-size: 12px;
+}
+.Card-icon{
+    width: 60px;
+    height: 58px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
